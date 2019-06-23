@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Weather } from "./components/Weather"
+import { Clock } from "./components/Clock"
 import './App.css';
+import { jsonData } from './data/quotes'; // or './module'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {quote: '', quoteAuthor: ''};
+
+    // This binding is necessary to make `this` work in the callback
+    this.updateQuote = this.updateQuote.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateQuote();
+  }
+
+  updateQuote() {
+    //console.log(jsonData.data);
+    var length = jsonData.data.length;
+    var quotes = jsonData.data;
+    
+    /*for (var i = 0; i < length; i++) {
+        var quote = quotes[i];
+        console.log(quote);
+    }*/
+
+    var item = quotes[Math.floor(Math.random()*length)];
+    //console.log(item);
+
+    this.setState({
+      quote: item.quote,
+      quoteAuthor: item.author
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Clock />
+          <Weather />
+          <p>"{this.state.quote}"</p>
+          <p className="author">{this.state.quoteAuthor}</p>
+        </header>
+      </div>
+    )  
+  }
 }
 
 export default App;
