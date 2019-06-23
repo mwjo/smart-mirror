@@ -40,9 +40,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Clock />
-          <Weather />
-          <p>"{this.state.quote}"</p>
+          <div className="clock">
+            <Clock />
+          </div>
+          <div className="weather">
+            <Weather />
+          </div>
+          <p className="quote">"{this.state.quote}"</p>
           <p className="author">{this.state.quoteAuthor}</p>
         </header>
       </div>
