@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/smart-mirror/precache-manifest.0138278a00162bd821d63bb29063e85e.js"
+  "/smart-mirror/precache-manifest.d2960dd020c2cc5d0c9d4cdae9ad7ebf.js"
 );
 
 self.addEventListener('message', (event) => {
