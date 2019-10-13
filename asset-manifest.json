@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/smart-mirror/static/css/main.98d36987.chunk.css",
-    "main.js": "/smart-mirror/static/js/main.a3b4fea9.chunk.js",
-    "main.js.map": "/smart-mirror/static/js/main.a3b4fea9.chunk.js.map",
+    "main.js": "/smart-mirror/static/js/main.e5e1a6d6.chunk.js",
+    "main.js.map": "/smart-mirror/static/js/main.e5e1a6d6.chunk.js.map",
     "runtime~main.js": "/smart-mirror/static/js/runtime~main.073a2aaa.js",
     "runtime~main.js.map": "/smart-mirror/static/js/runtime~main.073a2aaa.js.map",
     "static/js/2.c37e57dd.chunk.js": "/smart-mirror/static/js/2.c37e57dd.chunk.js",
     "static/js/2.c37e57dd.chunk.js.map": "/smart-mirror/static/js/2.c37e57dd.chunk.js.map",
     "index.html": "/smart-mirror/index.html",
-    "precache-manifest.d2960dd020c2cc5d0c9d4cdae9ad7ebf.js": "/smart-mirror/precache-manifest.d2960dd020c2cc5d0c9d4cdae9ad7ebf.js",
+    "precache-manifest.b940f93b0c7058c5c9bb1edd3c6cc111.js": "/smart-mirror/precache-manifest.b940f93b0c7058c5c9bb1edd3c6cc111.js",
     "service-worker.js": "/smart-mirror/service-worker.js",
     "static/css/main.98d36987.chunk.css.map": "/smart-mirror/static/css/main.98d36987.chunk.css.map"
   }
