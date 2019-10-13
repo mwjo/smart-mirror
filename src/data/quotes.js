@@ -4,6 +4,66 @@ var jsonData = {data: [
     "author" : "Friedrich Nietzsche"
   },
   {
+    "quote": "“If we do not feel grateful for what we already have, what makes us think we’d be happy with more?”",
+    "author": ""
+  },
+  {
+    "quote": "A character is what a character does",
+    "author": ""
+  },
+  {
+    "quote": "Act such that if your action became a universal maxim that that would be of universal benefit",
+    "author": "Immanuel Kant"
+  },
+  {
+    "quote": "If you don’t prioritise your life, someone else will",
+    "author": ""
+  },
+  {
+    "quote": "Spend less time studying your investments and more time studying yourself",
+    "author": "Jason Zweig"
+  },
+  {
+    "quote": "In the case of good books, the point is not to see how many of them you can get through, but rather how many can get through to you",
+    "author": "Mortimer J. Adler"
+  },
+  {
+    "quote": "What you are afraid to do is a clear indication of the next thing you need to do",
+    "author": "Ralph Waldo Emerson"
+  },
+  {
+    "quote": "You all laugh at me because I’m different. I laugh at you because you’re all the same.",
+    "author": "John Davis"
+  },
+  {
+    "quote": "In a room full of shouting people, the one who whispers becomes interesting",
+    "author": "Peter Schmidt"
+  },
+  {
+    "quote": "What is more mortifying than to feel that you have missed the plum for want of courage to shake the tree?",
+    "author": "Logan Pearsall Smith"
+  },
+  {
+    "quote": "The person who doesn't read is no better off than the person who can't read",
+    "author": ""
+  },
+  {
+    "quote": "Simplicity is the ultimate sophistication",
+    "author": "Leonardo DiVinci"
+  },
+  {
+    "quote": "How would the person I wish to be act today?",
+    "author": ""
+  },
+  {
+    "quote": "Human beings are born with different capacities, if they are free, they are not equal. And if they are equal, they are not free",
+    "author": "Aleksandr Solzhenitsyn"
+  },
+  {
+    "quote": "todo",
+    "author": "todo"
+  },
+  {
     "quote" : "We must all suffer one of two things, the pain of discipline or the pain of regret",
     "author" : ""
   },

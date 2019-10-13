@@ -5,10 +5,14 @@ export class Weather extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            icons: ["clear-day", "cloudy", "clear-day", "clear-night", "cloudy-night"],
-            temp: ["10", "10", "10", "10", "10"],
-            rain: ["0.1", "0.1", "0.1", "0.1", "0.1"],
-            time: ["9AM", "12PM", "3PM", "6PM", "9PM"]
+            //icons: ["clear-day", "cloudy", "clear-day", "clear-night", "cloudy-night"],
+            //temp: ["10", "10", "10", "10", "10"],
+            //rain: ["0.1", "0.1", "0.1", "0.1", "0.1"],
+            //time: ["9AM", "12PM", "3PM", "6PM", "9PM"]
+            icons: ["", "", "", "", ""],
+            temp: ["", "", "", "", ""],
+            rain: ["", "", "", "", ""],
+            time: ["", "", "", "", ""]
         };
     }
 
@@ -21,10 +25,6 @@ export class Weather extends React.Component {
 
     timeConverter(UNIX_timestamp){
         var a = new Date(UNIX_timestamp * 1000);
-        //var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        //var year = a.getFullYear();
-        //var month = months[a.getMonth()];
-        //var date = a.getDate();
         var hour = a.getHours();
 
         if (hour > 11) {
@@ -37,12 +37,6 @@ export class Weather extends React.Component {
         if (hour === "0 am") {
             hour = "12 am"
         }
-        //var min = a.getMinutes();
-        //var sec = a.getSeconds();
-        //var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-
-        //var min = a.getMinutes() < 10 ? '0' + a.getMinutes() : a.getMinutes(); 
-        //var sec = a.getSeconds() < 10 ? '0' + a.getSeconds() : a.getSeconds();
 
         return hour;
     }
@@ -75,7 +69,7 @@ export class Weather extends React.Component {
             }
 
             //format values
-            for (var i = 0; i < 5; ++i) {
+            for (i = 0; i < 5; ++i) {
 
                 //temperature
                 let temp = temps[i];
@@ -147,29 +141,6 @@ export class Weather extends React.Component {
                     <li className="rain">{this.state.rain[4]}</li>
                 </ul>
             </div>
-            /*<div className="weather">
-                <ul>
-                    <li><img className="icon" alt="clear-day" src={"https://darksky.net/images/weather-icons/" + this.state.icons[0] + ".png"}/></li>
-                    <li><img className="icon" alt="clear-day" src={"https://darksky.net/images/weather-icons/" + this.state.icons[1] + ".png"}/></li>
-                    <li><img className="icon" alt="clear-day" src={"https://darksky.net/images/weather-icons/" + this.state.icons[2] + ".png"}/></li>
-                    <li><img className="icon" alt="clear-day" src={"https://darksky.net/images/weather-icons/" + this.state.icons[3] + ".png"}/></li>
-                    <li><img className="icon" alt="clear-day" src={"https://darksky.net/images/weather-icons/" + this.state.icons[4] + ".png"}/></li>
-                </ul>
-                <ul className="temp">
-                    <li>{this.state.temp[0]}</li>
-                    <li>{this.state.temp[1]}</li>
-                    <li>{this.state.temp[2]}</li>
-                    <li>{this.state.temp[3]}</li>
-                    <li>{this.state.temp[4]}</li>
-                </ul>
-                <ul className="rain">
-                    <li>{this.state.rain[0]}</li>
-                    <li>{this.state.rain[1]}</li>
-                    <li>{this.state.rain[2]}</li>
-                    <li>{this.state.rain[3]}</li>
-                    <li>{this.state.rain[4]}</li>
-                </ul>
-            </div>*/
         )
     }
 }
