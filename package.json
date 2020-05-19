@@ -2,7 +2,7 @@
   "name": "smartmirror",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mwjo.github.io/smart-mirror",
+  "homepage": "https://smartmirror.markwj.com",
   "dependencies": {
     "axios": "^0.19.2",
     "gh-pages": "^2.2.0",
